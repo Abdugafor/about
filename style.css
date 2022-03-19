@@ -20,10 +20,9 @@ h1 {
 }
 .info img:hover {
     box-shadow: 4px 4px 14px 4px rgba(236, 55, 0, 0.479);
-    margin-left: 150px;
-    margin-top: 20px;
     transition-duration: 0.3s;
-    transition-property: all;
+    transition-property: box-shadow;
+    
 }
 
 .info {
@@ -170,6 +169,7 @@ a:hover {
     }
     .info-text {
         text-align: center;
+        margin: 0px;
     }
 
     h1 {
@@ -196,6 +196,8 @@ a:hover {
         padding: 5px;
         border-radius: 5px;
     }
+
+    
 
     
 }
