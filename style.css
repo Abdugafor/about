@@ -2,10 +2,12 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    background-image: url(wall.jpg)  ;
     background-position: bottom;
+    background: #393d3f;
+
         
 }
+
 
 .container {
     margin: 40px;
@@ -34,18 +36,19 @@ h1 {
 .info-text {
     margin-left: 40px;
     color: white;
+
 }
 
 .bg-green {
-    background: #fff9dc;
+    background: #ffffff;
 }
 
 .bg-yellow {
-    background: #e5ffe7;
+    background: #ffffff;
 }
 
 .bg-red {
-    background: #ffe5e5;
+    background: #ffffff;
 }
 
 .card {
@@ -53,6 +56,27 @@ h1 {
     padding: 20px;
     padding-top: 10px;
     margin-bottom: 20px;
+    width: 40%;
+    transition: 0.3s;
+}
+
+.card:hover {
+    margin-left: 5px;
+}
+
+.hb:hover {
+    box-shadow: 4px 4px 14px 4px rgba(255, 0, 0, 0.432);
+    transition-duration: 0.3s;
+}
+
+.sc-media:hover {
+    box-shadow: 4px 4px 14px 4px rgba(247, 0, 255, 0.432);
+    transition-duration: 0.3s;
+}
+
+.tb:hover {
+    box-shadow: 4px 4px 14px 4px rgba(38, 0, 255, 0.432);
+    transition-duration: 0.3s;
 }
 
 
@@ -105,6 +129,7 @@ a:hover {
     width: 100%;
     outline: none;
     background: inherit;
+    color: white;
 
 }
 
@@ -143,11 +168,166 @@ a:hover {
     transition-property: all;
 }
 
+@media (max-width: 1000px) {
+    
+    body {
+        background: #393d3f;
+    }
+    
+    .container {
+        margin: 40px;
+    }
+    
+    .info img {
+        border-radius: 25px;
+        box-shadow: 4px 4px 14px 4px rgba(0, 0, 0, 0.253);
+        margin-bottom: 0;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    .info img:hover {
+        box-shadow: 4px 4px 14px 4px rgba(4, 0, 248, 0.233);
+        transition-duration: 0.3s;
+        transition-property: box-shadow;
+        
+    }
+    
+    .info {
+        display: flex;
+    }
+    
+    .info-text {
+        margin-left: 40px;
+        color: white;
+    
+    }
+    
+    .bg-green {
+        background: #ffffff;
+    }
+    
+    .bg-yellow {
+        background: #ffffff;
+    }
+    
+    .bg-red {
+        background: #ffffff;
+    }
+    
+    .card {
+        border-radius: 25px;
+        padding: 20px;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .card:nth-child(1) {
+        margin-top: 20px;
+    }
+
+    .card:hover {
+        margin-left: 5px;
+        margin-bottom: 5;
+        margin-top: 15px;
+    }
+
+    
+    
+    a {
+        text-decoration: none;
+        font-family: inherit;
+    
+    }
+    
+    
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    
+    .table {
+        width: 100%;
+    
+    }
+    
+    .table td ,
+    .table th {
+        padding-bottom: 10px;
+    }
+    
+    .table td:nth-child(2) ,
+    .table td:nth-child(3) {
+        color: #86898F;
+    }
+    
+    .H {
+        text-align: center;
+        color: white;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 10px;
+        color: white;
+        
+    }
+    
+    
+    .form-group input ,
+    .form-group textarea {
+        border: none;
+        border-bottom: 1px solid white;
+        width: 100%;
+        outline: none;
+        background: inherit;
+    
+    }
+    
+    
+    .form-group input:hover ,
+    .form-group textarea {
+        outline: blue;
+        color: white;
+    }
+    
+    
+    
+    .row {
+        display: flex;
+        margin-bottom: 20px;
+    
+    }
+    
+    .row > .form-group {
+        width: 50%;
+        padding-right: 15px;
+    }
+    
+    .btn {
+        border:  none;
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+    
+    .btn:hover {
+        opacity: 80%;
+        cursor: pointer;
+        border-radius: 5px;
+        transition-duration: 0.3s ;
+        transition-property: all;
+    }
+}
+
+
+
 @media (max-width: 800px) {
 
-    .container {
-        margin: 20px 10px;
-    }
+  
 
     .info img {
         display: block;
@@ -164,7 +344,6 @@ a:hover {
 
     .card {
         padding: 10px;
-        
     }
     .info-text {
         text-align: center;
