@@ -8,6 +8,10 @@ body {
         
 }
 
+i {
+    margin-right: 5px;
+    color: black;
+}
 
 .container {
     margin: 40px;
@@ -62,6 +66,11 @@ h1 {
 
 .card:hover {
     margin-left: 5px;
+}
+
+.hb i {
+    margin-right: 7px;
+     
 }
 
 .hb:hover {
