@@ -8,6 +8,12 @@ body {
         
 }
 
+p {
+    font-family: inherit;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 i {
     margin-right: 5px;
     color: black;
@@ -68,6 +74,18 @@ h1 {
     margin-left: 5px;
 }
 
+.bio {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    width: 1000px;
+    height: 650px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 4px 4px 14px 4px rgba(0, 0, 0, 0.253);
+
+}
 .sc-media {
     display: none;
 }
@@ -171,6 +189,7 @@ a:hover {
     background-color: black;
     color: white;
     padding: 10px;
+    margin-top: 10px;
 }
 
 .btn:hover {
@@ -393,6 +412,10 @@ a:hover {
         transition-duration: 0.3s ;
         transition-property: all;
     }
+
+    .bio {
+        display: none;
+    }
 }
 
 
@@ -457,6 +480,10 @@ a:hover {
     }
     
     .social-menu {
+        display: none;
+    }
+
+    .bio {
         display: none;
     }
 }
